@@ -1,15 +1,8 @@
-# Welcome 👋🏻 to Appium Fast Boilerplate
+# WeatherUITest
 
-## Why this repo?
-
-- Provides a basic implementation for Appium based Android/iOS tests
-- Could be used as the initial boilerplate to evolve into a full-fledged framework
-- Beginner friendly
-- Provides an example project supporting a talk given during Appium Conf 2021
-  - on [Hello Appium! Setting up your First Appium Tests efficiently](https://confengine.com/conferences/appium-conf-2021/proposal/15501/hello-appium-setting-up-your-first-appium-tests-efficiently)
-  - Please see the slides (in documentation format)
-    at [automationhacks.io/slides](https://automationhacks.io/slides/2021/appium-conf/hello-appium-writing-your-first-tests/00-welcome/)
-    and then checkout 2021 tab
+- Provides a basic implementation for Appium based Android/iOS UI tests
+– Tests run against WeatherUI project found [here](https://github.com/jackvdp/WeatherTestApp)
+– For help, follow the tutorial [here](https://applitools.com/blog/how-to-write-appium-ios-test/)
 
 ## Pre setup
 
@@ -18,7 +11,12 @@
   - [Android](https://automationhacks.io/slides/2021/appium-conf/hello-appium-writing-your-first-tests/05-setup-for-android/)
   - [iOS](https://automationhacks.io/slides/2021/appium-conf/hello-appium-writing-your-first-tests/09-setup-for-ios/)
 
-## Run Android tests
+## Setup
+
+– Chnage path of app bundle in the ios-caps.json & android-caps.json
+– Install [Apium Server](https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4) & [Appium Inspector](https://github.com/appium/appium-inspector/releases) (optional)
+
+## Run Tests Android/iOS
 
 ```zsh
 gradle wrapper clean build runTests -Dtag="ANDROID" -Ddevice="ANDROID"
